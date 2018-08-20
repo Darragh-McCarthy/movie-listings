@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  background: #eee;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3em;
+}
+
+.genre {
+  padding: 1em;
+  display: flex;
+  width: 15em;
+  margin: 1em;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.ratings {
+  width: 100%;
+  padding: 3em;
+  display: flex;
+}
+.rating {
+  background: #ddd;
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.selected {
+  background: red;
+  color: #fff;
+
+  ~ .rating {
+    background: red;
+    color: #fff;
+  }
+}

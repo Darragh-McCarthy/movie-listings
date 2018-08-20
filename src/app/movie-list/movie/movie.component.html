@@ -1,0 +1,10 @@
+<div>
+    <img [src]="movie.posterUrl">
+    <div>
+        <div class="title">{{movie.title}}</div>
+        <div class="genres">
+            <span class="genre" *ngFor="let eachGenre of movie.genres">{{eachGenre.name}}</span>
+        </div>
+    </div>
+    vote_average:{{movie.vote_average}}
+</div>

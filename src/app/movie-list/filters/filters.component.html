@@ -1,0 +1,12 @@
+<div class="genres" *ngIf="movieListState.movieList.filters.genres">
+  <div *ngFor="let eachGenre of movieListState.movieList.filters.genres" class="genre" (click)="toggle(eachGenre.genre)" [class.selected]="(eachGenre.selected)">
+    {{eachGenre.genre.name}}
+  </div>
+</div>
+
+<div class="ratings">
+  <div class="rating" *ngFor="let eachRating of movieListState.movieList.filters.ratings" [class.selected]="eachRating.selected"
+    (click)="toggleRating(eachRating)">
+    {{eachRating.label}}
+  </div>
+</div>

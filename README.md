@@ -1,27 +1,25 @@
 # MovieListings
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
+Node v9.6.1
+NPM 6.4.0
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng serve` for a dev server. `http://localhost:4200/`
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Tasks
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Display a list of movies, each showing their title, genres and poster image. The movies should be ordered by popularity (most popular first - popularity property).
+https://developers.themoviedb.org/3/movies/get-now-playing
+The API is paginated and appears to return movies ordered by popularity, so I didn't modify the order
 
-## Further help
+Movies should be filterable by multiple genres, the user should have the ability to toggle movies depending on all of its assigned genres. For example if 'Action' and 'Drama' genres are selected listed movies must have both 'Action' and 'Drama' genres.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Movies should also be filterable by their rating (vote_average property). i.e If rating was set to 5, you would expect to see all movies with a rating of 5 or higher.
+
+The input API's should only be called once.
